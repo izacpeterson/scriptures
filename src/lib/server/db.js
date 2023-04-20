@@ -1,6 +1,6 @@
 import sqlite3 from "sqlite3";
 
-const db = new sqlite3.Database("lds-scriptures-sqlite.db");
+const db = new sqlite3.Database("./static/lds-scriptures-sqlite.db");
 
 export async function getScripture(book, chapter, verse) {
   return new Promise((resolve, reject) => {
